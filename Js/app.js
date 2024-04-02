@@ -114,8 +114,17 @@ particlesJS('particles-js',
       "background_image": "",
       "background_position": "50% 50%",
       "background_repeat": "no-repeat",
-      "background_size": "cover"
+      "background_size": "cover",
     }
   }
 
 );
+
+menuBtn=document.querySelector('.menu-btn');
+navBar=document.querySelector('.nav-items');
+menuBtn.onclick=function(){
+  navBar.classList.toggle('active');
+}
+window.onscroll=()=>{
+  navBar.classList.remove('active')
+}
