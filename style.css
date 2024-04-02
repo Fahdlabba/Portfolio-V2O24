@@ -26,7 +26,7 @@ html{
     align-items: center;
     justify-content: center;
     background: var(--second-color);
-    transition: opacity 1s, visibility 0.75s;
+    transition: opacity 2s, visibility 0.75s;
     z-index: 999;
   }
   
@@ -42,7 +42,7 @@ html{
     border: 15px solid var(--main-color);
     border-top-color: #27374D ;
     border-radius: 50%;
-    animation: loading 2s ease infinite;
+    animation: loading 0.75s ease infinite;
   }
   
   @keyframes loading {
