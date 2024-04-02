@@ -404,6 +404,7 @@ button:hover{
         height: 60vh;
     }
     .home-content{
+        width: 90%;
         padding: 40% 0;
     }
     .info{
@@ -467,6 +468,9 @@ button:hover{
     }
 
     /*Contact*/
+    .contact{
+        height: 100%;
+    }
     .contact-container{
         margin: 3% 0;
     }
