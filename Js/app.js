@@ -1,4 +1,5 @@
 
+
 particlesJS('particles-js',
   
   {
@@ -144,4 +145,37 @@ window.addEventListener("load", () => {
   loader.addEventListener("transitionend", () => {
     document.body.removeChild(loader);
   });
+});
+
+
+let swiperCards = new Swiper(".swiper", {
+  loop: true,
+  spaceBetween: 20,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints:{
+    600: {
+      slidesPerView: 2,
+    },
+    968: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
 });
