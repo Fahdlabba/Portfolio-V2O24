@@ -13,6 +13,50 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+/*loader*/ 
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-color);
+    transition: opacity 1s, visibility 0.75s;
+    z-index: 999;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid var(--main-color);
+    border-top-color: #27374D ;
+    border-radius: 50%;
+    animation: loading 2s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+
+
+
 /*Navbar Section*/
 
 .nav{
@@ -24,6 +68,7 @@ html{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    display: none;
 
 }
 .logo{
@@ -395,6 +440,10 @@ button:hover{
     .nav-items .li.active{
         left: 0;
     }
+    /*anchor*/
+    .anchor{
+        height: 8vh;
+    }
 
     /*Home Section*/
     #particles-js{
@@ -472,16 +521,13 @@ button:hover{
         height: 100%;
     }
     .contact-container{
-        margin: 3% 0;
+        margin: 5% 0;
     }
     .contact-card{
         width: 100%;
     }
-    input, textarea{
-        width: 90%;
-    }
-    button{
-        width: 90%;
+    input, textarea , button{
+        width: 80%;
     }
 
 }

@@ -128,3 +128,20 @@ menuBtn.onclick=function(){
 window.onscroll=()=>{
   navBar.classList.remove('active')
 }
+
+AOS.init({
+  once :true,
+  delay: 0
+});
+
+const nav = document.querySelector(".nav");
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  nav.style.display = "flex";
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
