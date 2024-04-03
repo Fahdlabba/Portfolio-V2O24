@@ -149,7 +149,7 @@ window.addEventListener("load", () => {
 
 
 let swiperCards = new Swiper(".swiper", {
-  loop: true,
+  loop: false,
   spaceBetween: 20,
   grabCursor: true,
 
