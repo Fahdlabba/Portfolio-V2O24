@@ -170,9 +170,6 @@ let swiperCards = new Swiper(".swiper", {
     968: {
       slidesPerView: 3,
     },
-    1200: {
-      slidesPerView: 4,
-    },
   },
   scrollbar: {
     el: ".swiper-scrollbar",
